@@ -16,7 +16,9 @@
     "db:pull": "drizzle-kit pull",
     "db:check": "drizzle-kit check",
     "db:up": "drizzle-kit up",
-    "test": "export PLAYWRIGHT=True && pnpm exec playwright test"
+    "test": "export PLAYWRIGHT=True && pnpm exec playwright test",
+    "monitor": "node scripts/health-monitor.js",
+    "monitor:prod": "node scripts/health-monitor.js https://your-domain.com 60"
   },
   "dependencies": {
     "@ai-sdk/react": "^1.2.11",
