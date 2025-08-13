@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | BCA Student & Aspiring Developer</title>
+  <meta name="description" content="Personal portfolio of a BCA student & aspiring developer. Projects, skills, and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%2314b8a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='12' width='64' height='64' fill='url(%23g)'/%3E%3Ctext x='32' y='40' font-family='Poppins' font-size='28' text-anchor='middle' fill='white'%3E%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header" role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span>My Portfolio</span>
+      </a>
+      <nav>
+        <button id="navToggle" class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div id="navLinks" class="nav__links" data-open="false" role="navigation">
+          <a href="#home" aria-current="page">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero container section" aria-labelledby="home-title">
+      <div class="hero__inner reveal">
+        <p class="hero__kicker">Hello, I'm</p>
+        <h1 class="hero__title" id="home-title">Your Name</h1>
+        <p class="hero__subtitle">BCA Student & Aspiring Developer. I build clean, responsive web experiences focused on performance and accessibility.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="contact.html">Contact Me</a>
+          <a class="btn btn--ghost" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title">Projects</h2>
+      <p class="section__subtitle">A selection of work demonstrating my skills and interests.</p>
+
+      <div class="projects__grid">
+        <!-- Card 1 -->
+        <article class="card reveal" aria-labelledby="p1-title">
+          <div class="card__media">
+            <img src="assets/img/project1.jpg" alt="Screenshot of Project One" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="p1-title">Project One</h3>
+            <p class="card__desc">A brief description of the project highlighting technologies and goals.</p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal" aria-labelledby="p2-title">
+          <div class="card__media">
+            <img src="assets/img/project2.jpg" alt="Screenshot of Project Two" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="p2-title">Project Two</h3>
+            <p class="card__desc">Short description with the impact and features developed.</p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal" aria-labelledby="p3-title">
+          <div class="card__media">
+            <img src="assets/img/project3.jpg" alt="Screenshot of Project Three" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="p3-title">Project Three</h3>
+            <p class="card__desc">Overview of the project and what I learned while building it.</p>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container section" aria-labelledby="skills-title">
+      <h2 class="section__title" id="skills-title">Skills</h2>
+      <p class="section__subtitle">Technologies and tools I work with.</p>
+
+      <div class="skills__list reveal">
+        <div class="skill">
+          <div class="skill__row">
+            <span class="skill__name">HTML</span>
+            <span class="skill__value">90%</span>
+          </div>
+          <div class="skill__bar"><span data-value="90%" aria-hidden="true"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <span class="skill__name">CSS</span>
+            <span class="skill__value">85%</span>
+          </div>
+          <div class="skill__bar"><span data-value="85%" aria-hidden="true"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <span class="skill__name">JavaScript</span>
+            <span class="skill__value">80%</span>
+          </div>
+          <div class="skill__bar"><span data-value="80%" aria-hidden="true"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__row">
+            <span class="skill__name">Python</span>
+            <span class="skill__value">70%</span>
+          </div>
+          <div class="skill__bar"><span data-value="70%" aria-hidden="true"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="muted">Built with semantic HTML, modern CSS, and vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
